@@ -1,5 +1,5 @@
 name = "telegram-learning-bot"
-main = "src/index.js"
+main = "index.js"
 compatibility_date = "2025-05-01"
 
 # KV namespace untuk simpan user state.
