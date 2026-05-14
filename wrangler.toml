@@ -1,0 +1,12 @@
+name = "telegram-learning-bot"
+main = "src/index.js"
+compatibility_date = "2025-05-01"
+
+# KV namespace untuk simpan user state.
+# Setelah jalankan `wrangler kv namespace create STATE`, copy id-nya ke sini.
+[[kv_namespaces]]
+binding = "STATE"
+id = "GANTI_DENGAN_KV_ID_HASIL_PERINTAH_WRANGLER"
+
+# Secrets (TELEGRAM_TOKEN, GEMINI_API_KEY, WEBHOOK_SECRET) JANGAN ditaruh di sini.
+# Gunakan: wrangler secret put TELEGRAM_TOKEN
