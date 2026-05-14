@@ -1,9 +1,11 @@
-name = "telegram-learning-bot"
+# Must match the Worker name in Cloudflare Workers Builds (see dashboard / CI log).
+name = "ailearning"
 main = "index.js"
 compatibility_date = "2025-05-01"
 
-# KV namespace untuk simpan user state.
-# Setelah jalankan `wrangler kv namespace create STATE`, copy id-nya ke sini.
+# KV: create once, then paste the real namespace id here (placeholder breaks deploy).
+# CLI: npx wrangler kv namespace create STATE
+# Or: Dashboard → Workers KV → Create namespace → copy id.
 [[kv_namespaces]]
 binding = "STATE"
 id = "GANTI_DENGAN_KV_ID_HASIL_PERINTAH_WRANGLER"
